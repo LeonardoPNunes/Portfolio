@@ -57,12 +57,12 @@ export const ProfileImg = styled.img`
   border: 2px solid #fff; 
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
   object-fit: cover; 
+  margin-left:40px;
   `
 export const ImgContainer = styled.div`
 box-sizing: border-box;
 width:100%;
 display: flex;
-margin:0 40px;
 justify-content: center;
 align-items: center;
 @media (max-width: 400px) {
