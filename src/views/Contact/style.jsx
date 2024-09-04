@@ -59,5 +59,14 @@ export const ProfileImg = styled.img`
   object-fit: cover; 
   `
 export const ImgContainer = styled.div`
-
+box-sizing: border-box;
+width:100%;
+display: flex;
+margin:0 40px;
+justify-content: center;
+align-items: center;
+@media (max-width: 400px) {
+  align-items: end;
+  justify-content: left;
+  }
 `
