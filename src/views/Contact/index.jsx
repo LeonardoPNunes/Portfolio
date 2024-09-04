@@ -9,11 +9,9 @@ const Contact = () =>{
     return(
         <SectionContact id="#contact">
             <h1>contato</h1>
-            <div>
             <ImgContainer>
                 <ProfileImg src={profile} alt="" />
             </ImgContainer>
-            </div>
             <div>
                 <IconsContact
                 href="https://contate.me/leonardopnunes" 
