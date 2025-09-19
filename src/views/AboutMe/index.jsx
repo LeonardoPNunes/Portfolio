@@ -6,7 +6,7 @@ const AboutMe = () => {
     <SectionAboutMe id="#aboutMe">
       <h1>Sobre Mim</h1>
       <p>
-        Me chamo Leonardo, tenho 21 anos e comecei a programar aos 16, no início
+        Me chamo Leonardo, tenho 22 anos e comecei a programar aos 16, no início
         da pandemia. Desde cedo estive cercado por pessoas da área de
         tecnologia, e foi por meio de um desses contatos que surgiu esse meu
         primeiro contato com a programação: ele havia ganhado um curso da
