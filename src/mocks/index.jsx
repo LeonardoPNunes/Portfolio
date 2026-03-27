@@ -15,8 +15,10 @@ export const data = [
     linkGit: "https://github.com/LeonardoPNunes/task-project",
     linkProject: "https://task-project-leo.vercel.app/",
     description:
-      "Site criado para um desafio de uma empresa, foco no cadastro do usuario com sistema de autenticação com criptografia, login, cadastro, visualização de informações do cadastro e listagem de outros usuários.",
-    frameworks: "Feito com Next.js",
+      "Aplicação criada para um desafio técnico com autenticação, cadastro, login e listagem de usuários em uma interface clara e objetiva.",
+    frameworks: "Next.js",
+    category: "Autenticação e dashboard",
+    stack: ["Next.js", "Auth", "UI"],
   },
   {
     name: "LDrinks",
@@ -24,8 +26,10 @@ export const data = [
     altimg: "gif de apresentação do projeto LDrinks",
     linkGit: "https://github.com/LeonardoPNunes/LDrinks",
     description:
-      "Complemento do PLNEFO cocktail, mas na versão mobile, com o mesmo sistema de filtragem usando api publica com redux, modo noturno e diurno, favoritos, login...",
-    frameworks: "Feito com React-Native",
+      "Versão mobile de um catálogo de drinks com filtros, favoritos, login e consumo de API pública em uma experiência pensada para celular.",
+    frameworks: "React Native",
+    category: "Aplicativo mobile",
+    stack: ["React Native", "Redux", "API"],
   },
   {
     name: "PLNEFO cocktail",
@@ -34,8 +38,10 @@ export const data = [
     linkGit: "https://github.com/LeonardoPNunes/P-L-N-E-F-O",
     linkProject: "https://plnefo-cocktail.vercel.app/",
     description:
-      "Site com sistema de filtragem usando api publica com redux, modo noturno e diurno, favoritos, login...",
-    frameworks: "Feito com React",
+      "Projeto com filtros, favoritos, login e integração com API pública, combinando funcionalidade com uma navegação visualmente agradável.",
+    frameworks: "React",
+    category: "Web app com API",
+    stack: ["React", "Redux", "API"],
   },
   {
     name: "Github Profiles",
@@ -44,8 +50,10 @@ export const data = [
     linkGit: "https://github.com/LeonardoPNunes/githubProfiles",
     linkProject: "https://github-profiles-project-leo.vercel.app/",
     description:
-      "Site usando api publica do github onde podemos buscar perfils, projetos, seguidores, seguindo e nome da pessoa.",
-    frameworks: "Feito com React",
+      "Busca de perfis do GitHub com consulta de repositórios, seguidores, seguindo e principais dados públicos em uma interface direta.",
+    frameworks: "React",
+    category: "Integração com API",
+    stack: ["React", "GitHub API", "UX"],
   },
   {
     name: "Buscador de CEP",
@@ -54,8 +62,10 @@ export const data = [
     linkGit: "https://github.com/LeonardoPNunes/Buscador-De-CEP",
     linkProject: "https://buscador-de-cep-project-leo.vercel.app/",
     description:
-      "Site usando api publica, onde buscamos o cep e os dados referentes a rua, bairro, cidade e complemento são mostrados",
-    frameworks: "Feito com React",
+      "Ferramenta para consulta de CEP com retorno rápido de endereço, bairro, cidade e complemento em uma interface simples e eficiente.",
+    frameworks: "React",
+    category: "Ferramenta utilitária",
+    stack: ["React", "API", "Formulários"],
   },
   {
     name: "Encurtador de link",
@@ -64,8 +74,10 @@ export const data = [
     linkGit: "https://github.com/LeonardoPNunes/link-generator",
     linkProject: "https://link-generator-project-leo.vercel.app/",
     description:
-      "Site usando api publica, onde podemos encurtar um link e copiar ele, todos os links ficarão salvos para caso queira copiar novamente",
-    frameworks: "Feito com React",
+      "App para encurtar, copiar e armazenar links, com foco em fluidez de uso e feedback claro para ações rápidas.",
+    frameworks: "React",
+    category: "Produtividade",
+    stack: ["React", "API", "Storage"],
   },
   {
     name: "Fashion",
@@ -74,8 +86,10 @@ export const data = [
     linkGit: "https://github.com/LeonardoPNunes/Responsive-website",
     linkProject: "https://responsive-website-project-leo.vercel.app/",
     description:
-      "criado um site de loja de roupa com foco no visual e responsividade.",
-    frameworks: "Feito com React",
+      "Landing page para loja de roupas com foco em impacto visual, composição forte e responsividade em diferentes telas.",
+    frameworks: "React",
+    category: "Landing page",
+    stack: ["React", "Responsive", "UI"],
   },
   {
     name: "Infusion",
@@ -83,7 +97,10 @@ export const data = [
     altimg: "gif de apresentação do site infusion",
     linkGit: "https://github.com/LeonardoPNunes/InFusion",
     linkProject: "https://in-fusion.vercel.app/",
-    description: "criado um site de loja de roupa com foco no visual",
-    frameworks: "Feito com Html e Css",
+    description:
+      "Projeto com foco em identidade visual e apresentação de marca, priorizando composição, estética e navegação leve.",
+    frameworks: "HTML e CSS",
+    category: "Visual concept",
+    stack: ["HTML", "CSS", "Layout"],
   },
 ];

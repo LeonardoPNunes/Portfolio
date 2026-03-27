@@ -1,52 +1,91 @@
 import React from "react";
+import { FaDownload, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import profile from "../../assets/img/profile.jpeg";
+import file from "../../assets/file/curriculo.pdf";
 import {
-  IconsContact,
-  ImgContainer,
+  ContactCard,
+  ContactGrid,
+  ContactHeader,
+  ContactWrapper,
+  CTABox,
+  DownloadLink,
   ProfileImg,
   SectionContact,
-  ContactsContainer,
+  SectionTag,
 } from "./style";
-import { FaWhatsapp } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import { FaLinkedin } from "react-icons/fa";
-import profile from "../../assets/img/profile.jpg";
 
 const Contact = () => {
   return (
-    <SectionContact id="#contact">
-      <h1>contato</h1>
-      <ImgContainer>
-        <ProfileImg src={profile} alt="" />
-      </ImgContainer>
-      <ContactsContainer>
-        <IconsContact
+    <SectionContact id="contact">
+      <SectionTag>Contato</SectionTag>
+      <ContactHeader>
+        <div>
+          <h2>Vamos conversar</h2>
+        </div>
+        <DownloadLink href={file} download="curriculo-leonardo-nunes.pdf">
+          <FaDownload />
+          Baixar currículo
+        </DownloadLink>
+      </ContactHeader>
+
+      <ContactWrapper>
+        <ProfileImg src={profile} alt="Leonardo Nunes" />
+
+        <CTABox>
+          <strong>
+            Estou aberto para conversar sobre novas oportunidades.
+          </strong>
+          <p>
+            Se fizer sentido para o seu time, será um prazer trocar uma ideia
+            sobre projetos, desafios e possibilidades de atuação.
+          </p>
+        </CTABox>
+      </ContactWrapper>
+
+      <ContactGrid>
+        <ContactCard
           href="https://contate.me/leonardopnunes"
           target="_blank"
           rel="noreferrer"
         >
           <FaWhatsapp size={55} />
-          <h1>Whatsapp</h1>
-        </IconsContact>
+          <h3>WhatsApp</h3>
+          <span>Conversa rápida para orçamento ou oportunidade.</span>
+        </ContactCard>
 
-        <IconsContact
-          href="mailto:zleo465@gmail.com"
+        <ContactCard
+          href="mailto:leonardo.desenvolvedorfront@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
           <SiGmail size={55} />
-          <h1>Gmail</h1>
-        </IconsContact>
+          <h3>Gmail</h3>
+          <span>Contato direto para propostas e networking.</span>
+        </ContactCard>
 
-        <IconsContact
-          href="https://www.linkedin.com/in/leonardo-paulo-nunes-de-freitas/message/"
+        <ContactCard
+          href="https://www.linkedin.com/in/leonardo-paulo-nunes-de-freitas/"
           target="_blank"
           rel="noreferrer"
         >
           <FaLinkedin size={55} />
-          <h1>Linkedin</h1>
-        </IconsContact>
-      </ContactsContainer>
+          <h3>LinkedIn</h3>
+          <span>Perfil profissional e histórico de atuação.</span>
+        </ContactCard>
+
+        <ContactCard
+          href="https://github.com/LeonardoPNunes"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithub size={55} />
+          <h3>GitHub</h3>
+          <span>Repositórios, estudos e projetos publicados.</span>
+        </ContactCard>
+      </ContactGrid>
     </SectionContact>
   );
 };
+
 export default Contact;

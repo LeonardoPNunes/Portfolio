@@ -1,25 +1,23 @@
-import React from 'react'
-import { ContainerButton } from './style'
-import { Link } from 'react-scroll';
+import React from "react";
+import { Link } from "react-scroll";
+import { ContainerButton } from "./style";
 
-const SidebarItem = ({ Icon, Text, navigateItem }) => {
-
+const SidebarItem = ({ Icon, Text, navigateItem, onClick }) => {
   return (
-     <Link
+    <Link
       to={navigateItem}
       spy={true}
       smooth={true}
-      offset={-70}
-      duration={500}
+      offset={-90}
+      duration={600}
+      onClick={onClick}
     >
-    <ContainerButton>
-     
-      <Icon />
-      {Text}
-    
-    </ContainerButton>
+      <ContainerButton>
+        <Icon />
+        {Text}
+      </ContainerButton>
     </Link>
-  )
-}
+  );
+};
 
-export default SidebarItem
+export default SidebarItem;

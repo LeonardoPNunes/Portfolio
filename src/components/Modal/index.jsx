@@ -1,20 +1,18 @@
-import React from "react"
+import React from "react";
+import * as globalActions from "../../store/modules/global/actions";
+import { Container, GifClose, GifModal, ModalContent } from "./style";
 
-import * as globalActions from "../../store/modules/global/actions"
-import {
-    Container, GifClose, GifModal
-} from "./style"
+const Modal = (gif) => {
+  return (
+    <Container onClick={() => globalActions.setOpen()}>
+      <ModalContent onClick={(event) => event.stopPropagation()}>
+        <GifClose type="button" onClick={() => globalActions.setOpen()}>
+          Fechar
+        </GifClose>
+        <GifModal src={gif.gif} alt="Prévia ampliada do projeto" />
+      </ModalContent>
+    </Container>
+  );
+};
 
-const Modal = (gif) =>{
-
-    return(
-        <Container onClick={() => globalActions.setOpen()}>
-            <div>
-            <GifClose onClick={() =>{}}>X</GifClose>
-            </div>
-            <GifModal src={gif.gif} alt="" />
-            
-        </Container>
-    )
-}
-export default Modal
+export default Modal;

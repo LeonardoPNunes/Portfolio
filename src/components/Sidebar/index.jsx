@@ -1,34 +1,42 @@
-import React from 'react'
-import { Container, Content } from './style'
-import { 
-  FaTimes, 
-  FaHome, 
-  FaUserAlt, 
-  FaTasks
-} from 'react-icons/fa'
-import {
-    SiAboutdotme
-} from "react-icons/si"
+import React from "react";
+import { FaHome, FaTasks, FaTimes, FaUserAlt } from "react-icons/fa";
+import { SiAboutdotme } from "react-icons/si";
+import SidebarItem from "../SidebarItem";
+import { CloseButton, Container, Content, Overlay } from "./style";
 
-import SidebarItem from '../SidebarItem'
-
-const Sidebar = ({ active }) => {
-
-  const closeSidebar = () => {
-    active(false)
-  }
-
+const Sidebar = ({ active, onClose }) => {
   return (
-    <Container sidebar={active}>
-      <FaTimes onClick={closeSidebar} />  
-      <Content>
-        <SidebarItem navigateItem="#home" Icon={FaHome} Text="Home" />
-        <SidebarItem navigateItem="#aboutMe" Icon={SiAboutdotme} Text="Sobre Mim" />
-        <SidebarItem navigateItem="#projects" Icon={FaTasks} Text="Projetos" />
-        <SidebarItem navigateItem="#contact" Icon={FaUserAlt} Text="Contatos" />
-      </Content>
-    </Container>
-  )
-}
+    <>
+      <Overlay onClick={onClose} />
+      <Container sidebar={active}>
+        <CloseButton type="button" onClick={onClose} aria-label="Fechar menu">
+          <FaTimes />
+        </CloseButton>
 
-export default Sidebar
+        <Content>
+          <SidebarItem navigateItem="home" Icon={FaHome} Text="Home" onClick={onClose} />
+          <SidebarItem
+            navigateItem="aboutMe"
+            Icon={SiAboutdotme}
+            Text="Sobre mim"
+            onClick={onClose}
+          />
+          <SidebarItem
+            navigateItem="projects"
+            Icon={FaTasks}
+            Text="Projetos"
+            onClick={onClose}
+          />
+          <SidebarItem
+            navigateItem="contact"
+            Icon={FaUserAlt}
+            Text="Contato"
+            onClick={onClose}
+          />
+        </Content>
+      </Container>
+    </>
+  );
+};
+
+export default Sidebar;
